@@ -1,0 +1,105 @@
+body {
+  margin:0px;
+  padding:0px;
+}
+
+#logo {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  float:left;
+}
+
+iframe {
+  margin:auto;
+}
+
+form {
+  display:flex;
+  flex-direction:column;
+  padding:10%;
+  justify-content:center;
+  text-align:center;
+}
+
+form > label {
+  font-size:3em;
+}
+
+form > input {
+  background-color:pink;
+  width:60%;
+  height:1.68em;
+  margin:2em auto;
+}
+
+form > button {
+  width:200px;
+  height:2em;
+  margin:0em auto;
+  background-color:cyan;
+  border:0px;
+  border-radius:5%;
+  font-size:1.32em;
+}
+
+#header {
+  position:fixed;
+  display:flex;
+  width:100%;
+  top:0px;
+ background-color:#7d0;
+}
+
+.nav-link {
+  color:black;
+  align-self:center;
+  text-decoration:none;
+  font-size:1.2em;
+  margin:5px;
+  width:33%;
+}
+.nav-link:hover {
+  border:5px solid pink;
+}
+
+#nav-bar {
+ margin:0px 0px 0px 25px;
+  width:100%;
+  height:100px;
+  
+  display:flex;
+  top:0px;
+  right:0px;
+  align-self:center;
+  height:90%;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-bar {
+    top:0px;
+    right:0px;
+    flex-direction:column;    
+  }
+}
+
+h1 {
+  margin:0px 20px;
+}
+
+.dahlia {
+  width:68px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
